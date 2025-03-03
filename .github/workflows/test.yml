@@ -3,7 +3,6 @@ name: GitHub Actions Demo
 on: [push]
 
 jobs:
-
   Lint:
     runs-on: ubuntu-latest
     steps:
@@ -12,7 +11,6 @@ jobs:
         
   Build:
     runs-on: ubuntu-latest
-
     steps:
       - name: Step 1
         run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
@@ -41,12 +39,12 @@ jobs:
         
   Test:
     runs-on: ubuntu-latest
-      steps:
-        - name: Step 1
-          run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
+    steps:
+      - name: Step 1
+        run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
 
   Deploy:
     runs-on: ubuntu-latest
-      steps:
-        - name: Step 1
-          run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
+    steps:
+      - name: Step 1
+        run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
