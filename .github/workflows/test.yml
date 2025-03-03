@@ -25,6 +25,11 @@ jobs:
       - name: Check out repository code (Step 4)
         uses: actions/checkout@v4
 
+      - name: Install node.js 10
+        uses: actions/setup-node@v4.2.0
+        with:
+          node-version: 10.x
+
       - name: Run test.js (Step 4.2)
         run: |
           node test.js
