@@ -1,9 +1,6 @@
 name: GitHub Actions Demo
 
-on:
-  pull_request: 
-    branches:
-      - main 
+on: [push]
 
 jobs:
   Lint:
